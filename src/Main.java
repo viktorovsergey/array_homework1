@@ -29,12 +29,14 @@ public class Main {
         boolean[] arrayThree = {true, false, true, true, true, false};
         System.out.println("Значение элементов первого массива");
         for (int i = 0; i < arrayOne.length; i++) {
+            System.out.print(arrayOne[i]);
             if (i < arrayOne.length - 1) {
-                System.out.print(arrayOne[i] + ", ");
-            } else {
-                System.out.print(arrayOne[i]);
+                System.out.print( ", ");
             }
+
         }
+        //первый способ распечатки без запятой ниже приведен второй способ распечатки без запятой
+        //воторлой способ прегружен лишним оператором но все равно осталю как пример плохого кода
         System.out.println();
         System.out.println("Значение элементов второго массива");
         for (int i = 0; i < arrayTwo.length; i++) {
@@ -62,28 +64,25 @@ public class Main {
         boolean[] arrayThree = {true, false, true, true, true, false};
         System.out.println("Значение элементов первого массива");
         for (int i = (arrayOne.length - 1); i >= 0; i--) {
+            System.out.print(arrayOne[i]);
             if (i > 0) {
-                System.out.print(arrayOne[i] + ", ");
-            } else {
-                System.out.print(arrayOne[i]);
+                System.out.print(", ");
             }
         }
         System.out.println();
         System.out.println("Значение элементов второго массива");
         for (int i = (arrayTwo.length - 1); i >= 0; i--) {
+            System.out.print(arrayTwo[i]);
             if (i > 0) {
-                System.out.print(arrayTwo[i] + ", ");
-            } else {
-                System.out.print(arrayTwo[i]);
+                System.out.print(", ");
             }
         }
         System.out.println();
         System.out.println("Значение элементов третьего массива");
         for (int i = (arrayThree.length - 1); i >= 0; i--) {
+            System.out.print(arrayThree[i]);
             if (i > 0) {
-                System.out.print(arrayThree[i] + ", ");
-            } else {
-                System.out.print(arrayThree[i]);
+                System.out.print(", ");
             }
         }
     }
